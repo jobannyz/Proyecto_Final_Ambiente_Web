@@ -3,21 +3,37 @@ include '../ConnBD.php';
 
 function validarUsuario($email, $contrasenna)
 {
-    $enlace = ConectarBaseDatos();
-    $sentencia = "call login('$email','$contrasenna');";
-    $uservalidado = $enlace -> query($sentencia);
-    CerrarBaseDatos($enlace);
     
-    if($uservalidado != " ") {
+    $respuesta = "";
+    
+
+    try
+    {
+      $enlace = ConectarBaseDatos();
+      $sentencia = "call login('$email','$contrasenna');";
+      $uservalidado = $enlace -> query($sentencia);
+      CerrarBaseDatos($enlace);
+    }
+    catch(Exception $ex)
+    {
+        $respuesta = $ex -> getMessage();
+    }
+
+    if($respuesta == "") {
       $msg =  "Usuario se ha registrado correctamente";
+      $usuarioValidado = mostrarUsuario($uservalidado);
+      header("location: confirmacionLogin.php");
     }
     else {
       $msg = "Usuario o contraseña incorrecto. Intente de nuevo";
     }
     
-    return $msg;
+    return $respuesta;
     
   }
 
+function mostrarUsuario($usuario) {
+  return mysqli_fetch_array($usuario);
+}
 
 ?>
