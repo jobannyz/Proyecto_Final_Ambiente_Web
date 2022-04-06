@@ -4,15 +4,18 @@ include '../ConnBD.php';
 function validarUsuario($email, $contrasenna)
 {
     $enlace = ConectarBaseDatos();
-    $sentencia = "CALL validacion($email, $contrasenna);";
-    $uservalidado = $enlace -> query("call validacion('admin@admin.com', 'admin123');");
+    $sentencia = "call login('$email','$contrasenna');";
+    $uservalidado = $enlace -> query($sentencia);
     CerrarBaseDatos($enlace);
     
     if($uservalidado != " ") {
-      return "Usuario se ha registrado correctamente";
+      $msg =  "Usuario se ha registrado correctamente";
+    }
+    else {
+      $msg = "Usuario o contraseña incorrecto. Intente de nuevo";
     }
     
-    return "Usuario o contraseña incorrecto. Intente de nuevo";
+    return $msg;
     
   }
 
