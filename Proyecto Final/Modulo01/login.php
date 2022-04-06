@@ -3,17 +3,13 @@ include 'validacion.php';
 
 if(isset($_POST['btnIniciarSesion']))
   {
-      $email = $_POST["email"];
-      $contrasenna = $_POST["contrasenna"];
+      $email = $_POST['email'];
+      $contrasenna = $_POST['contrasenna'];
 
       $respuesta = validarUsuario($email, $contrasenna);
-      
-      alert($respuesta);
-  }
-  
-  $respuesta = validarUsuario("admin@admin.com", "admin123");
-      
-      
+
+}
+
 ?>
 
 <!DOCTYPE html>
@@ -95,8 +91,13 @@ if(isset($_POST['btnIniciarSesion']))
         </div>
     </div>
     <!-- Estructura de Modal para Login---Cierre -->
-
-
+    <div>
+        <p>
+            <?php
+            $respuesta;
+            ?>
+        </p>
+    </div>
     <script src="../materialize/js/materialize.min.js"></script>
     <script>
     $(document).ready(function() {
