@@ -8,11 +8,7 @@ M.AutoInit();
 
   // Or with jQuery
 
-  $(document).ready(function(){
-    $('.sidenav').sidenav();
-  });
-
-
+ 
   document.addEventListener('DOMContentLoaded', function() {
     var elems = document.querySelectorAll('.slider');
     var instances = M.Slider.init(elems, options);
@@ -20,8 +16,12 @@ M.AutoInit();
 
   // Or with jQuery
 
+  $(document).ready(function(){
+    $('.slider').slider();
+  });
   
 
+  
   var instance = M.Carousel.init({
     fullWidth: true,
     indicators: true
@@ -33,6 +33,8 @@ M.AutoInit();
     fullWidth: true,
     indicators: true
   });
+
+
 
   var instance = M.Carousel.init({
     fullWidth: true
