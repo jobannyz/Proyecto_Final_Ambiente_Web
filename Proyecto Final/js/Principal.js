@@ -1,9 +1,6 @@
 M.AutoInit();
 
-document.addEventListener('DOMContentLoaded', function() {
-    var elems = document.querySelectorAll('.sidenav');
-    var instances = M.Sidenav.init(elems, options);
-  });
+
 
   // Initialize collapsible (uncomment the lines below if you use the dropdown variation)
   // var collapsibleElem = document.querySelector('.collapsible');
@@ -23,9 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // Or with jQuery
 
-  $(document).ready(function(){
-    $('.slider').slider();
-  });
+  
 
   var instance = M.Carousel.init({
     fullWidth: true,
@@ -37,4 +32,14 @@ document.addEventListener('DOMContentLoaded', function() {
   $('.carousel.carousel-slider').carousel({
     fullWidth: true,
     indicators: true
+  });
+
+  var instance = M.Carousel.init({
+    fullWidth: true
+  });
+
+  // Or with jQuery
+
+  $('.carousel.carousel-slider').carousel({
+    fullWidth: true
   });

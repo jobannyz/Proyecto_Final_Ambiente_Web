@@ -19,34 +19,24 @@
   <div class="nav-wrapper">
   <form>
     <ul class="left hide-on-med">
-    <li><a class="waves-effect waves-light btn">Acme</a></li>
+    <li><a class="waves-effect waves-light btn grey">Acme</a></li>
     </ul>
 
     <ul class="right hide-on-med-and-down">
       <li><a class="sections" href="#!" data-target="section">Tienda</a></li>
       <li><a class="sections" href="#!" data-target="section">Acerca</a></li>
-      <li><a class="sections" href="#!" data-target="section">Promociones</a></li>
       <li><a class="sections" href="#!" data-target="section">Mi Cuenta</a></li>
       <li><a class="sections" href="#!" data-target="section">Contacto</a></li>
-      
-
-      <ul class="right hide-on-med-and-down">
-        <div class="input-field">
-          <input id="search" type="search" required>
-          <label class="label-icon" for="search"><i class="material-icons">search</i></label>
-          <i class="material-icons">close</i>
-          </ul>
-        </div>
-
+      <li><a class="sections" href="#!" data-target="section">Carrito</a></li>
         </ul>
       </form>
   </div>
 </nav>
+
 <footer class="page-footer">
           <div class="container">
             <div class="row">
               <div class="col l6 s12">
-                <h5 class="white-text">Footer Content</h5>
                 <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
               </div>
               <div class="col l4 offset-l2 s12">
@@ -62,8 +52,8 @@
           </div>
           <div class="footer-copyright">
             <div class="container">
-            © 2014 Copyright Text
-            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+            Copyright© Acme Costa Rica
+            <a class="grey-text text-lighten-4 right" href="#!"></a>
             </div>
           </div>
         </footer>
