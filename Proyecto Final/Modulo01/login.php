@@ -3,10 +3,10 @@ include 'validacion.php';
 
 if(isset($_POST['btnIniciarSesion']))
   {
-      $email = $_POST['email'];
-      $contrasenna = $_POST['contrasenna'];
-
-      $respuesta = validarUsuario($email, $contrasenna);
+        $email = $_POST['email'];
+        $contrasenna = $_POST['contrasenna'];
+        
+        validarUsuario($email, $contrasenna);
 
 }
 
@@ -81,24 +81,36 @@ if(isset($_POST['btnIniciarSesion']))
                                     contraseña</span>
                             </div>
                         </div>
+                        <div class="row">
+                            <input type="submit" href="#!" class="modal-close waves-effect waves-green btn"
+                                name="btnIniciarSesion"></input>
+                        </div>
                     </form>
                 </div>
             </div>
         </div>
-        <div class="modal-footer">
-            <a type="submit" href="#!" class="modal-close waves-effect waves-green btn" name="btnIniciarSesion">Iniciar
-                Sesión</a>
-        </div>
+
     </div>
     <!-- Estructura de Modal para Login---Cierre -->
+
     <div>
         <p>
             <?php
-            $respuesta;
+
+            function prueba($email) {
+            if ($email != null) {
+                echo '<span>Usuario Registrado</span>';
+                //echo '<span>'.$Respuesta.'</span>';
+            }
+            else {
+                echo '<span>Usuario NO registrado</span>';};
+            }
             ?>
         </p>
     </div>
+
     <script src="../materialize/js/materialize.min.js"></script>
+
     <script>
     $(document).ready(function() {
         $('.modal').modal();
