@@ -14,7 +14,8 @@
 
      <!-- Compiled and minified JavaScript -->
      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-
+</head>
+     <body>
 
         <div class="input-field">
           <input id="search" type="search" required>
@@ -25,28 +26,28 @@
   <div class="slider">
     <ul class="slides">
       <li>
-        <img src="https://lorempixel.com/580/250/nature/1"> <!-- random image -->
+        <img src="images/teclado.jpg"> <!-- random image -->
         <div class="caption center-align">
           <h3>This is our big Tagline!</h3>
           <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
         </div>
       </li>
       <li>
-        <img src="https://lorempixel.com/580/250/nature/2"> <!-- random image -->
+        <img src="images/teclado.jpg"> <!-- random image -->
         <div class="caption left-align">
           <h3>Left Aligned Caption</h3>
           <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
         </div>
       </li>
       <li>
-        <img src="https://lorempixel.com/580/250/nature/3"> <!-- random image -->
+        <img src="images/teclado.jpg"> <!-- random image -->
         <div class="caption right-align">
           <h3>Right Aligned Caption</h3>
           <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
         </div>
       </li>
       <li>
-        <img src="https://lorempixel.com/580/250/nature/4"> <!-- random image -->
+        <img src="images/teclado.jpg"> <!-- random image -->
         <div class="caption center-align">
           <h3>This is our big Tagline!</h3>
           <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
@@ -98,9 +99,13 @@
 
       </div>
   
+      <div class="grey darken-3">
+      <div class="container">
       <div class="video-container">
         <iframe width="553" height="280" src=" //www.youtube.com/embed/UqWugtZyhxI?rel=0" frameborder="0" allowfullscreen></iframe>
-      </div>                                     
+      </div>     
+      </div>         
+      </div>                           
 
       <div class="container">
     <div class="section">
@@ -118,13 +123,15 @@
     </div>
   </div>
 
-  
+  <div class="grey darken-3">
   <section>
   <div class="carousel carousel-slider">
   <div class="carousel-fixed-item center">
     </div>
 
+    
       <a class="carousel-item black-text" href="#one">
+      <div class="container">
       <div class="grey card small center">
         <div class="card-image">
           <img src="images/silla.jpg" height="300" width="300">
@@ -134,9 +141,11 @@
           <p>Adjusters have photos of cars damaged in accidents; these images, however, are not helping prevent...</p>
         </div>
       </div>  
+      </div> 
       </a>
 
       <a class="carousel-item black-text" href="#two">
+      <div class="container">
       <div class="grey card small center">
         <div class="card-image">
           <img src="images/silla.jpg">
@@ -146,9 +155,11 @@
           <p>Production lines are often equipped with cameras, but it can be challenging to infer quality or safety problems...</p>
         </div>
       </div>  
+      </div> 
       </a>
 
       <a class="carousel-item black-text" href="#three">
+      <div class="container">
       <div class="grey card small center">
         <div class="card-image">
           <img src="images/silla.jpg">
@@ -158,9 +169,11 @@
           <p>Recommend products that match your customers' style, analyze reviews or survey data for topics and trends</p>
         </div>
       </div>  
+      </div> 
       </a>
 
       <a class="carousel-item black-text" href="#three">
+      <div class="container">
       <div class="grey card small center">
         <div class="card-image">
           <img src="images/silla.jpg">
@@ -170,9 +183,11 @@
           <p>Adjusters have photos of cars damaged in accidents; these images, however, are not helping prevent future ...</p>
         </div>
       </div>  
+      </div> 
       </a>
 
       <a class="carousel-item black-text" href="#three">
+      <div class="container">
       <div class="grey card small center">
         <div class="card-image">
           <img src="images/silla.jpg">
@@ -183,15 +198,23 @@
           I am convenient because I require little markup to use effectively.</p>
         </div>
       </div>  
+      </div> 
       </a>
 
   </div>
 </section>
-
-    <body>
+</div>
 
       <!--JavaScript at end of body for optimized loading-->
       <script type="text/javascript" src="js/materialize.min.js"></script>
       <script type="text/javascript" src="js/principal.js"></script>
+
+<!--Import jQuery Library-->
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <!--Import materialize.js-->
+        <script src="js/materialize.min.js"></script>
+<script type="text/javascript"> $(document).ready(function(){
+    $('.slider').slider();
+  });</script>
     </body>
   </html>
