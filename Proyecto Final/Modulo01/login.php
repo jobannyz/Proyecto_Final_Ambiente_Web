@@ -3,6 +3,7 @@ include 'validacion.php';
 
 if(isset($_POST['btnIniciarSesion']))
   {
+
         $email = $_POST['email'];
         $contrasenna = $_POST['contrasenna'];
         
@@ -108,6 +109,7 @@ if(isset($_POST['btnIniciarSesion']))
             ?>
         </p>
     </div>
+
 
     <script src="../materialize/js/materialize.min.js"></script>
 
