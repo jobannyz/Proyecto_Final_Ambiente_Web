@@ -50,7 +50,7 @@ if(isset($_POST['btnIniciarSesion']))
         <p>Ingrese los datos solicitados para iniciar sesión</p>
         <div class="container">
             <div class="row">
-                <form method="post" action="login.php" class="col s12">
+                <form method="post" action="navbar.php" class="col s12">
                     <div class="row">
                         <div class="input-field col s12">
                             <input id="email" type="email" class="validate" name="email">
