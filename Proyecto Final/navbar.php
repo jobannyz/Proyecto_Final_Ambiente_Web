@@ -33,10 +33,10 @@ if(isset($_POST['btnIniciarSesion']))
 
                 <!-- Dropdown Structure -->
                 <ul id='dropdown1' class='dropdown-content'>
-                    <li><a href="#!">Productos</a></li>
+                    <li><a href="#">Productos</a></li>
                     <li><a href="#!">Proveedores</a></li>
                     <li><a href="#!">Localizaciones</a></li>
-                    <li><a href="#!">Usuarios</a></li>
+                    <li><a href="usuarios.php">Usuarios</a></li>
                     <li><a href="#!">Clientes</a></li>
                 </ul>
             </li>
