@@ -44,6 +44,8 @@
 
                 </tbody>
             </table>
+            <br>
+            <a class="waves-effect waves-light btn">Nueva Localización</a>
         </div>
     </main>
 

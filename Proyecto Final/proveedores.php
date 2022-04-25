@@ -44,6 +44,8 @@ include 'php/MantenimientoProveedores.php';
 
                 </tbody>
             </table>
+            <br>
+            <a class="waves-effect waves-light btn">Nuevo Proveedor</a>
         </div>
     </main>
 
