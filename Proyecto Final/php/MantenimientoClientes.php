@@ -27,7 +27,7 @@ function MostrarClientes()
         echo "<td>" . $item["DIRECCION_EXACTA"] . "</td>";
         echo "<td>" . $item["ID_USUARIO"] . "</td>";
         echo "<td>" . $item["CORREO"] . "</td>";
-        echo '<td><a href="actualizarClienta.php?q=' . $item["ID_PERSONA"] . '" class="btn btn-info"><i class="material-icons">settings</i></a></td>';
+        echo '<td><a href="actualizarCliente.php?q=' . $item["ID_PERSONA"] . '" class="btn btn-info"><i class="material-icons">settings</i></a></td>';
         echo "<tr>"; 
     }
 }
