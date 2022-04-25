@@ -37,7 +37,7 @@ include 'php/MantenimientoProveedores.php';
                     <tr>
                         <th>Código de Proveedor</th>
                         <th>Nombre</th>
-                        <th>Activo</th>
+                        <th>Acciones</th>
                     </tr>
                 </thead>
                 <tbody class="table-warning" id="BodyProveedores">

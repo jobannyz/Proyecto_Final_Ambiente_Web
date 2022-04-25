@@ -1,5 +1,5 @@
 <?php
-    include 'php/MantenimientoProveedores.php';
+    include 'php/MantenimientoClientes.php';
 ?>
 
 <!DOCTYPE html>
@@ -42,7 +42,7 @@
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="js/materialize.min.js"></script>
-    <script src="js/Proveedores.js"></script>
+    <script src="js/Localizaciones.js"></script>
 
     <script type="text/javascript">
     $(document).ready(function() {

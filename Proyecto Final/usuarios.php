@@ -61,7 +61,6 @@ include 'php/MantenimientoUsuarios.php';
     $(document).ready(function() {
         $("#navbar").load("navbar.php");
         $("#footer").load("footer.php");
-        $('.parallax').parallax();
     });
     </script>
 </body>
