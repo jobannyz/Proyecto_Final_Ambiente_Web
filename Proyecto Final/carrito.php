@@ -1,5 +1,5 @@
 <?php
-    include 'php/MantenimientoClientes.php';
+    
 ?>
 
 <!DOCTYPE html>
@@ -32,28 +32,24 @@
     <main>
         <div class="container">
             <br><br>
+            <h3>Carrito de Compras</h3>
             <table class="table">
                 <thead class="table-warning">
                     <tr>
-                        <th>Código del Cliente</th>
-                        <th>Nombre</th>
-                        <th>Apellido</th>
-                        <th>Teléfono</th>
-                        <th>Cédula</th>
-                        <th>País</th>
-                        <th>Provincia</th>
-                        <th>Canton</th>
-                        <th>Distrito</th>
-                        <th>Dirección exacta</th>
-                        <th>Código de Usuario</th>
-                        <th>Correo</th>
-                        <th>Acciones</th>
+                        <th>Código del carrito</th>
+                        <th>Imagen</th>
+                        <th>Descripcion</th>
+                        <th>Precio Unitario</th>
+                        <th>Cantidad</th>
+                        <th>Total</th>
                     </tr>
                 </thead>
-                <tbody class="table-warning" id="BodyClientes">
+                <tbody class="table-warning" id="BodyCarrito">
 
                 </tbody>
             </table>
+            <br>
+            <a class="waves-effect waves-light btn">Pagar</a>
         </div>
     </main>
 
